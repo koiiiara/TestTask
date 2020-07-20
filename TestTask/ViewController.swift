@@ -60,6 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @objc func valueChanged(_ sender: UISegmentedControl) {
         selectedSegmentId.isHidden = false
+        selectedRowId.text = ""
         switch sender.selectedSegmentIndex {
         case 0:
             selectedSegmentId.text = "0"
